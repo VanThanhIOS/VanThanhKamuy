@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/VTIOS/Naytri/refs/heads/main/VanThanhIOS.lua.txt"))() -- LIBRARY
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/VanThanhKamuy/refs/heads/main/VanThanhIOS.lua.txt"))() -- LIBRARY
 
 
 local Window = Library:CreateWindow('Menu : Văn Thành IOS ') -- CREATE WINDOW
