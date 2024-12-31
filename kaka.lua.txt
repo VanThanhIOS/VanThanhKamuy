@@ -521,10 +521,6 @@ function PostWebhook(Url, message)
 end
 end)
 
-Island_Teleport:addToggle("Bypass Teleport", BypassTeleport, function(Value)
-    BypassTeleport = Value
-end)
-
 local Home_Left = Tab.Tab_1:addSection()
 local Changelog = Home_Left:addMenu("Thông Tin")
 Changelog:addChangelog('Xin Chào Tất Cả Các Bạn ❤️')
