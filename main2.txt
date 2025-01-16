@@ -131,65 +131,65 @@ function Library:CreateWindow(hubname)
     MInimize_Button.TextSize = 40.000
     MInimize_Button.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-    Discord.Name = "Discord"
-    Discord.Parent = Body
-    Discord.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-    Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Discord.BorderSizePixel = 0
-    Discord.Position = UDim2.new(0, 5, 0, 320)
-    Discord.Size = UDim2.new(0, 85, 0, 25)
-    Discord.AutoButtonColor = false
-    Discord.Font = Enum.Font.SourceSans
-    Discord.Text = ""
-    Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
-    Discord.TextSize = 14.000
+    Facebook.Name = "Facebook"
+    Facebook.Parent = Body
+    Facebook.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Facebook.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Facebook.BorderSizePixel = 0
+    Facebook.Position = UDim2.new(0, 5, 0, 320)
+    Facebook.Size = UDim2.new(0, 85, 0, 25)
+    Facebook.AutoButtonColor = false
+    Facebook.Font = Enum.Font.SourceSans
+    Facebook.Text = ""
+    Facebook.TextColor3 = Color3.fromRGB(0, 0, 0)
+    Facebook.TextSize = 14.000
 
     UICorner.CornerRadius = UDim.new(0, 5)
-    UICorner.Parent = Discord
+    UICorner.Parent = Facebook
 
-    Disc_Logo.Name = "Disc_Logo"
-    Disc_Logo.Parent = Discord
-    Disc_Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Disc_Logo.BackgroundTransparency = 1.000
-    Disc_Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Disc_Logo.BorderSizePixel = 0
-    Disc_Logo.Position = UDim2.new(0, 5, 0, 1)
-    Disc_Logo.Size = UDim2.new(0, 23, 0, 23)
-    Disc_Logo.Image = "http://www.roblox.com/asset/?id=12058969086"
+    Face_Logo.Name = "Face_Logo"
+    Face_Logo.Parent = Facebook
+    Face_Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Face_Logo.BackgroundTransparency = 1.000
+    Face_Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Face_Logo.BorderSizePixel = 0
+    Face_Logo.Position = UDim2.new(0, 5, 0, 1)
+    Face_Logo.Size = UDim2.new(0, 23, 0, 23)
+    Face_Logo.Image = "http://www.roblox.com/asset/?id=12058969086"
 
-    Disc_Title.Name = "Disc_Title"
-    Disc_Title.Parent = Discord
-    Disc_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Disc_Title.BackgroundTransparency = 1.000
-    Disc_Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Disc_Title.BorderSizePixel = 0
-    Disc_Title.Position = UDim2.new(0, 35, 0, 0)
-    Disc_Title.Size = UDim2.new(0, 40, 0, 25)
-    Disc_Title.Font = Enum.Font.SourceSansSemibold
-    Disc_Title.Text = "Discord"
-    Disc_Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Disc_Title.TextSize = 14.000
-    Disc_Title.TextXAlignment = Enum.TextXAlignment.Left
+    Face_Title.Name = "Face_Title"
+    Face_Title.Parent = Facebook
+    Face_Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Face_Title.BackgroundTransparency = 1.000
+    Face_Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Face_Title.BorderSizePixel = 0
+    Face_Title.Position = UDim2.new(0, 35, 0, 0)
+    Face_Title.Size = UDim2.new(0, 40, 0, 25)
+    Face_Title.Font = Enum.Font.SourceSansSemibold
+    Face_Title.Text = "Facebook"
+    Face_Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Face_Title.TextSize = 14.000
+    Face_Title.TextXAlignment = Enum.TextXAlignment.Left
 
-    Discord.MouseEnter:Connect(function()
-        utility:Tween(Discord, {BackgroundColor3 = Color3.fromRGB(30, 30, 30)}, .15)
-        utility:Tween(Disc_Logo, {ImageTransparency = 0.7}, .15)
-        utility:Tween(Disc_Title, {TextTransparency = 0.7}, .15)
+    Facebook.MouseEnter:Connect(function()
+        utility:Tween(Facebook, {BackgroundColor3 = Color3.fromRGB(30, 30, 30)}, .15)
+        utility:Tween(Face_Logo, {ImageTransparency = 0.7}, .15)
+        utility:Tween(Face_Title, {TextTransparency = 0.7}, .15)
     end)
 
-    Discord.MouseLeave:connect(function()
-        utility:Tween(Discord, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}, .15)
-        utility:Tween(Disc_Logo, {ImageTransparency = 0}, .15)
-        utility:Tween(Disc_Title, {TextTransparency = 0}, .15)
+    Facebook.MouseLeave:connect(function()
+        utility:Tween(Facebook, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}, .15)
+        utility:Tween(Face_Logo, {ImageTransparency = 0}, .15)
+        utility:Tween(Face_Title, {TextTransparency = 0}, .15)
     end)
 
-    Discord.MouseButton1Click:Connect(function()
+    Facebook.MouseButton1Click:Connect(function()
         (setclipboard or toclipboard)("https://discord.gg/25ms")
         wait(.1)
         game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Discord",
-            Text = "Discord copied on your clipboard",
-            Button1 = "Okay",
+            Title = "Facebook",
+            Text = "Bạn Đã Sao Chép Link Facebook",
+            Button1 = "Oke",
             Duration = 20
         })
     end)
