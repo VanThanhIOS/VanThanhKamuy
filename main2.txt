@@ -272,13 +272,13 @@ function Library:CreateWindow(hubname)
 
     toggle_Image.Name = "toggle_Image"
     toggle_Image.Parent = Toggle
-    toggle_Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    toggle_Image.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
     toggle_Image.BackgroundTransparency = 1.000
     toggle_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
     toggle_Image.Image = "http://www.roblox.com/asset/?id=71290116143762"
-    toggle_Image.ImageColor3 = Color3.fromRGB(245, 0, 0)
+    toggle_Image.ImageColor3 = Color3.fromRGB(245, 245, 245)
 
     local minimizetog = false
     MInimize_Button.MouseButton1Click:Connect(function()
