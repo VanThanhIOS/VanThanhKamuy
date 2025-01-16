@@ -149,13 +149,13 @@ function Library:CreateWindow(hubname)
 
     Face_Logo.Name = "Face_Logo"
     Face_Logo.Parent = Facebook
-    Face_Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Face_Logo.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
     Face_Logo.BackgroundTransparency = 1.000
     Face_Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Face_Logo.BorderSizePixel = 0
     Face_Logo.Position = UDim2.new(0, 5, 0, 1)
     Face_Logo.Size = UDim2.new(0, 23, 0, 23)
-    Face_Logo.Image = "http://www.roblox.com/asset/?id=12058969086"
+    Face_Logo.Image = "http://www.roblox.com/asset/?id=71290116143762"
 
     Face_Title.Name = "Face_Title"
     Face_Title.Parent = Facebook
@@ -184,7 +184,7 @@ function Library:CreateWindow(hubname)
     end)
 
     Facebook.MouseButton1Click:Connect(function()
-        (setclipboard or toclipboard)("https://discord.gg/25ms")
+        (setclipboard or toclipboard)("https://m.facebook.com/vanthanhisme/")
         wait(.1)
         game:GetService("StarterGui"):SetCore("SendNotification",{
             Title = "Facebook",
@@ -277,8 +277,8 @@ function Library:CreateWindow(hubname)
     toggle_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
-    toggle_Image.Image = "http://www.roblox.com/asset/?id=12021503727"
-    toggle_Image.ImageColor3 = Color3.fromRGB(255, 0, 0)
+    toggle_Image.Image = "http://www.roblox.com/asset/?id=71290116143762"
+    toggle_Image.ImageColor3 = Color3.fromRGB(245, 0, 0)
 
     local minimizetog = false
     MInimize_Button.MouseButton1Click:Connect(function()
